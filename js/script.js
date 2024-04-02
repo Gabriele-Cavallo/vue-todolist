@@ -58,11 +58,13 @@ createApp({
             }
         },
         lineThroughAutoplay() {
-            if(this.done){
-                this.tasks[index].doneTask = 'done';
-            }else if(!this.done){
-                this.tasks[index].doneTask = '';
-            }
+            this.tasks.forEach((singleTask, index) => {
+                if(singleTask.done){
+                    this.tasks[index].doneTask = 'done';
+                }else if(!singleTask.done){
+                    this.tasks[index].doneTask = '';
+                }
+            });
         },
         deleteTask(index){
             this.tasks.splice(index, 1);
