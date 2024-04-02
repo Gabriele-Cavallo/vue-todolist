@@ -38,7 +38,7 @@ header .logo{
 .done{
     text-decoration: line-through;
 }
-.remove{
+.cursor-pointer{
     cursor: pointer;
 }
 .user-input{

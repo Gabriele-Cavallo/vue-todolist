@@ -33,10 +33,10 @@
                 <!-- Single task -->
                 <ul>
                     <li class="task" v-for="singleTask, index in tasks" @click="lineThrough(index)" :class="tasks[index].doneTask">
-                        <div>
+                        <div class="cursor-pointer">
                             {{tasks[index].text}}
                         </div>
-                        <div class="remove" @click="deleteTask(index)">
+                        <div class="cursor-pointer" @click="deleteTask(index)">
                             <i class="fa-solid fa-xmark"></i>
                         </div>
                     </li>
