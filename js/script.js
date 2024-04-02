@@ -41,10 +41,14 @@ createApp({
                 },
                 {
                     text: 'Ciao sono una task-3',
-                    done: false
+                    done: false,
                 }
             ],
-            doneTask: null
+            doneTask: null,
+            newTask: {
+                text: '',
+                done: false
+            }
         };
     },
     methods: {
@@ -66,9 +70,12 @@ createApp({
                 }
             });
         },
-        deleteTask(index){
+        deleteTask(index) {
             this.tasks.splice(index, 1);
         },
+        addNewTask() {
+            this.tasks.unshift(this.newTask);
+        }
     },
     mounted() {
         this.lineThroughAutoplay();

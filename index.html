@@ -24,8 +24,8 @@
         <main>
             <!-- User Input -->
             <div class="user-input">
-                <input type="text" placeholder="Add New Task">
-                <button>Aggiungi</button>
+                <input type="text" placeholder="Add New Task" v-model="newTask.text">
+                <button @click="addNewTask">Aggiungi</button>
             </div>
             <!-- /User Input -->
             <!-- Tasks container -->
