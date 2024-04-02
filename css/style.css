@@ -41,5 +41,19 @@ header .logo{
 .remove{
     cursor: pointer;
 }
+.user-input{
+    text-align: center;
+}
+.user-input input{
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.user-input button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
 /* #endregion MAIN */
 
