@@ -43,13 +43,29 @@ createApp({
                     text: 'Ciao sono una task-3',
                     done: false
                 }
-            ]
-
+            ],
+            doneTask: null
         };
     },
     methods: {
-
+        lineThrough(index){
+            if(this.tasks[index].done){
+                this.tasks[index].doneTask = '';
+                this.tasks[index].done = false;
+            }else if(!this.tasks[index].done){
+                this.tasks[index].doneTask = 'done';
+                this.tasks[index].done = true;
+            }
+        },
+        lineThroughAutoplay() {
+            if(this.done){
+                this.tasks[index].doneTask = 'done';
+            }else if(!this.done){
+                this.tasks[index].doneTask = '';
+            }
+        }
     },
     mounted() {
+        this.lineThroughAutoplay();
     }
 }).mount('#app');

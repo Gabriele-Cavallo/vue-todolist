@@ -29,5 +29,8 @@ header .logo{
     margin: 0 auto;
     margin-top: 20px;
 }
+.done{
+    text-decoration: line-through;
+}
 /* #endregion MAIN */
 

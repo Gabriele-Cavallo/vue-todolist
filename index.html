@@ -26,7 +26,7 @@
             <div class="tasks">
                 <!-- Single task -->
                 <ul class="task">
-                    <li v-for="singleTask, index in tasks" :class="tasks[index].done">{{tasks[index].text}}</li>
+                    <li v-for="singleTask, index in tasks" @click="lineThrough(index)" :class="tasks[index].doneTask">{{tasks[index].text}}</li>
                 </ul>
                 <!-- /Single task -->
             </div>
