@@ -30,6 +30,20 @@ const { createApp } = Vue;
 createApp({
    data() {
         return {
+            tasks: [
+                {
+                    text: 'Ciao sono una task-1',
+                    done: false,
+                },
+                {
+                    text: 'Ciao sono una task-2',
+                    done: true,
+                },
+                {
+                    text: 'Ciao sono una task-3',
+                    done: false
+                }
+            ]
 
         };
     },

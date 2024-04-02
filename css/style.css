@@ -11,3 +11,23 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 /* #endregion GENERAL */
+
+/* #region HEADER */
+header .logo{
+    text-align: center;
+}
+.logo img{
+    width: 300px;
+}
+/* #endregion HEADER */
+
+/* #region MAIN */
+.tasks{
+    background-color: lightgray;
+    padding: 20px 0;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+/* #endregion MAIN */
+

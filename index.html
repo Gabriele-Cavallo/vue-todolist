@@ -12,6 +12,29 @@
 <body>
     <!-- Vue-JS HTML Container -->
     <div id="app">
+        <!-- Header Logo -->
+        <header>
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo">
+            </div>
+        </header>
+        <!-- /Header Logo -->
+
+        <!-- Main-Todo Tasks -->
+        <main>
+            <!-- Tasks container -->
+            <div class="tasks">
+                <!-- Single task -->
+                <ul class="task">
+                    <li v-for="singleTask, index in tasks" :class="tasks[index].done">{{tasks[index].text}}</li>
+                </ul>
+                <!-- /Single task -->
+            </div>
+            <!-- /Tasks container -->
+
+        </main>
+        <!-- /Main-Todo Tasks -->
+
     </div>
     <!-- /Vue-JS HTML Container -->
     <!-- Vue-JS Script -->
