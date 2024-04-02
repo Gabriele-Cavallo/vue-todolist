@@ -25,8 +25,16 @@
             <!-- Tasks container -->
             <div class="tasks">
                 <!-- Single task -->
-                <ul class="task">
-                    <li v-for="singleTask, index in tasks" @click="lineThrough(index)" :class="tasks[index].doneTask">{{tasks[index].text}}</li>
+                <ul>
+                    <li class="task" v-for="singleTask, index in tasks" @click="lineThrough(index)" :class="tasks[index].doneTask">
+                        <div>
+                            {{tasks[index].text}}
+                        </div>
+                        <div class="remove" @click="deleteTask(index)">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </li>
+
                 </ul>
                 <!-- /Single task -->
             </div>

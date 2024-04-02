@@ -63,7 +63,10 @@ createApp({
             }else if(!this.done){
                 this.tasks[index].doneTask = '';
             }
-        }
+        },
+        deleteTask(index){
+            this.tasks.splice(index, 1);
+        },
     },
     mounted() {
         this.lineThroughAutoplay();

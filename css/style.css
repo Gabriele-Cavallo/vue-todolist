@@ -24,13 +24,22 @@ header .logo{
 /* #region MAIN */
 .tasks{
     background-color: lightgray;
-    padding: 20px 0;
+    padding: 20px;
     width: 70%;
     margin: 0 auto;
     margin-top: 20px;
 }
+.task{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
 .done{
     text-decoration: line-through;
+}
+.remove{
+    cursor: pointer;
 }
 /* #endregion MAIN */
 
