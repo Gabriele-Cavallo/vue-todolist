@@ -26,6 +26,7 @@
             <div class="user-input">
                 <input type="text" placeholder="Add New Task" v-model="newTask.text" @keyup.enter="addNewTask">
                 <button class="cursor-pointer" @click="addNewTask">Aggiungi</button>
+                <div v-if="inputError" class="error">{{ errorMessage }}</div>
             </div>
             <!-- /User Input -->
             <!-- Tasks container -->

@@ -48,7 +48,9 @@ createApp({
             newTask: {
                 text: '',
                 done: false
-            }
+            },
+            errorMessage: null,
+            inputError: false
         };
     },
     methods: {
@@ -74,7 +76,18 @@ createApp({
             this.tasks.splice(index, 1);
         },
         addNewTask() {
-            this.tasks.unshift(this.newTask);
+            if (this.newTask.text.length >= 5){
+                this.tasks.unshift(this.newTask);
+                this.inputError = false;
+                this.newTask =
+                {
+                    text: '',
+                    done: false
+                }
+            }else{
+                this.inputError = true;
+                this.errorMessage = 'Devi inserire almeno 5 caratteri'
+            }
         }
     },
     mounted() {
