@@ -1,0 +1,13 @@
+/* #region RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* #endregion RESET */
+
+/* #region GENERAL */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* #endregion GENERAL */
